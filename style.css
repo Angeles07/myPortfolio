@@ -47,6 +47,14 @@ font-size:16px;
 line-height:1.6;
 }
 
+p .descLabel{
+  font-size:18px;
+  font-weight: 1000;
+}
+
+.navbar-brand{
+font-weight: 1000;
+}
 #home h1{
 font-size:48px;
 letter-spacing:1px;
@@ -476,7 +484,7 @@ height:auto;
 
 
 .filter-btn.active{
-background:#0b6f35;
+background:#2e302f;
 color:#fff;
 }
 

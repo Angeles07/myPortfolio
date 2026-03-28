@@ -46,6 +46,7 @@ bar.style.width = bar.dataset.width
 let sections=document.querySelectorAll('section')
 let navLinks=document.querySelectorAll('.nav-link')
 
+/*
 sections.forEach(sec=>{
 let offset=sec.offsetTop-150
 let height=sec.offsetHeight
@@ -58,18 +59,18 @@ if(activeLink) activeLink.classList.add('active')
 }
 })
 
+
 document.querySelectorAll('.parallax').forEach(el=>{
 let speed = 0.03
 el.style.transform = "translateY(" + (scrollY * speed) + "px)"
 })
-
 document.body.classList.add('scrolling')
 clearTimeout(window.scrollTimer)
 
 window.scrollTimer = setTimeout(()=>{
 document.body.classList.remove('scrolling')
 },200)
-
+*/
 const nav = document.querySelector('.navbar')
 if(scrollY > 50){
 nav.classList.add('scrolled')
