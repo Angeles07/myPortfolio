@@ -107,7 +107,6 @@ project.classList.add('hide')
 
 })
 })
-
 /*scroll top*/
 // Scroll-to-top button
 const scrollTopBtn = document.getElementById("scrollTopBtn");
