@@ -12,15 +12,15 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#home">My Portfolio</a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navMenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habits">Habits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experiences</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -37,6 +37,7 @@
         <h2 id="labelMe">I'M <span id="typing"></span></h2>
         <p class="descLabel">I create modern, responsive systems, software applications and layouting graphic design.</p>
         <a href="https://raw.githubusercontent.com/Angeles07/myPortfolio/main/ANGELES%20-%20PDS.pdf" download class="btn btn-success mt-3">Download PDS</a>
+        <a href="https://raw.githubusercontent.com/Angeles07/myPortfolio/main/ANGELES_RESUME.pdf" download class="btn btn-success mt-3">Download Resume</a>
         </div>
     </div>
     </section>
@@ -45,7 +46,7 @@
         <div class="container d-flex flex-wrap align-items-start gap-4">
             <div class="about-text flex-fill">
             <h2 class="about-title">About Me</h2>
-            <p>Hello! I am a passionate developer and a layout artist focused on creating modern, responsive systems. I enjoy building software applications, designing tarpaulin, T-shirt sublimation, etc. that are clean, efficient, and creative.</p>
+            <p>Hello! I am Muntasir U. Angeles 21 years old, graduated at STI College Cotabato with a degree of BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY.</p>
             <p>Here’s a quick summary of my personal details:</p>
             </div>
 
@@ -64,82 +65,130 @@
         </div>
     </section>
 
-    <section id="skills" class="fade">
-        <div class="container">
-        <h2 class="mb-4">Skills</h2>
-            <div class="row g-4">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card glass skill">
-                    <p>HTML</p>
-                    <div class="progress"><div class="progress-bar" data-width="90%"></div></div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card glass skill">
-                    <p>CSS</p>
-                    <div class="progress"><div class="progress-bar" data-width="85%"></div></div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card glass skill">
-                    <p>JavaScript</p>
-                    <div class="progress"><div class="progress-bar" data-width="80%"></div></div>
-                    </div>
-                </div>
+    <section id="habits" class="fade">
+    <div class="container">
+        
+        <h2 class="about-title">Habits</h2>
+
+        <div class="row g-4">
+
+        <!-- HABIT 1 -->
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card glass habit-card">
+            
+            <video src="https://raw.githubusercontent.com/Angeles07/myPortfolio/main/vidSing.mp4" class="habit-media" controls></video>
+
+            <h5>Singing</h5>
+            <p>I enjoy singing during my free time.</p>
+
             </div>
         </div>
-    </section>
 
-    <section id="projects" class="fade">
-        <div class="container">
-            <h2 class="mb-4">Projects</h2>
+        <!-- HABIT 2 -->
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card glass habit-card">
+            
+            <img src="https://raw.githubusercontent.com/Angeles07/myPortfolio/main/program.png" class="habit-media">
 
-            <div class="text-center mb-4">
-                <button class="btn btn-outline-dark filter-btn" data-filter="all">All</button>
-                <button class="btn btn-outline-dark filter-btn" data-filter="web">Web</button>
-                <button class="btn btn-outline-dark filter-btn" data-filter="system">System</button>
-            </div>
+            <h5>Encoding</h5>
+            <p>I like working on systems.</p>
 
-            <div class="row g-4" id="projectContainer">
-                <div class="col-md-4 project-item" data-category="web">
-                    <div class="card glass h-100">
-                        <img src="project1.jpg" class="img-fluid rounded">
-                        <h5 class="mt-3">Web Project</h5>
-                        <p>Responsive website project.</p>
-                        <div class="d-flex gap-2 mt-2">
-                            <a href="#" class="btn btn-success btn-sm">Live Demo</a>
-                            <a href="#" class="btn btn-dark btn-sm">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 project-item" data-category="system">
-                    <div class="card glass h-100">
-                        <img src="project2.jpg" class="img-fluid rounded">
-                        <h5 class="mt-3">System Project</h5>
-                        <p>Windows Forms system.</p>
-                        <div class="d-flex gap-2 mt-2">
-                            <a href="#" class="btn btn-success btn-sm">Live Demo</a>
-                            <a href="#" class="btn btn-dark btn-sm">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 project-item" data-category="web">
-                    <div class="card glass h-100">
-                        <img src="project3.jpg" class="img-fluid rounded">
-                        <h5 class="mt-3">Portfolio Site</h5>
-                        <p>Modern portfolio design.</p>
-                        <div class="d-flex gap-2 mt-2">
-                            <a href="#" class="btn btn-success btn-sm">Live Demo</a>
-                            <a href="#" class="btn btn-dark btn-sm">GitHub</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
+
+        <!-- HABIT 3 -->
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card glass habit-card">
+            
+            <img src="https://raw.githubusercontent.com/Angeles07/myPortfolio/main/mlbb.jpg" class="habit-media">
+
+            <h5>Gaming</h5>
+            <p>I enjoy playing video games to relax.</p>
+
+            </div>
+        </div>
+
+        </div>
+    </div>
     </section>
 
+    <section id="experience" class="fade">
+    <div class="container">
+        <h2 class="experience-title">Experience</h2>
+
+        <div class="row g-4">
+
+        <!-- CARD 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card glass exp-card h-100">
+            <h5>Administrative Assistant III – IT</h5>
+            <p class="company">MBHTE- BARMM</p>
+            <span class="date">January 2026 - Present</span>
+
+            <ul class="timeline-list">
+                <li>Developed Python automation systems</li>
+                <li>Built file-matching solutions</li>
+                <li>Maintained government databases</li>
+                <li>Improved workflows using IT solutions</li>
+                <li>Prepared budget proposals</li>
+            </ul>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card glass exp-card h-100">
+            <h5>Administrative Assistant II – IT</h5>
+            <p class="company">MBHTE- BARMM</p>
+            <span class="date">July 2025 - December 2025</span>
+
+            <ul class="timeline-list">
+                <li>Developed automation scripts</li>
+                <li>Optimized validation systems</li>
+                <li>Improved data handling efficiency</li>
+                <li>Maintained reporting databases</li>
+                <li>Prepared budget computations</li>
+            </ul>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card glass exp-card h-100">
+            <h5>Administrative Aide VI – IT</h5>
+            <p class="company">MBHTE- BARMM</p>
+            <span class="date">January 2025 - June 2025</span>
+
+            <ul class="timeline-list">
+                <li>Developed balancing systems</li>
+                <li>Created file-matching tools</li>
+                <li>Supported database operations</li>
+            </ul>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card glass exp-card h-100">
+            <h5>IT Instructor</h5>
+            <p class="company">STI College Cotabato</p>
+            <span class="date">August 2024 - December 2024</span>
+
+            <ul class="timeline-list">
+                <li>Taught programming and system development</li>
+                <li>Guided students in Java, Python, C#</li>
+                <li>Designed lesson plans</li>
+                <li>Mentored students for IT careers</li>
+            </ul>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+    </div>
+    </section>
     <section id="contact" class="fade">
     <div class="container d-flex flex-wrap gap-4">
         
@@ -181,9 +230,14 @@
     </section>
 
 
-    <footer>
-        <p>© 2026 Portfolio</p>
+    <footer class="footer">
+    <div class="container footer-container">
+        <p>©2026 Portfolio</p>
+    </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" title="Go to top">↑</button>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>

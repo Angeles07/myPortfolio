@@ -24,6 +24,13 @@ if(el.getBoundingClientRect().top < window.innerHeight){
 el.classList.add('show')
 }
 })
+
+let navLinks = document.querySelectorAll('.nav-link')
+  navLinks.forEach(link=>link.classList.remove('active'))
+
+  let homeLink = document.querySelector('.nav-link[href="#home"]')
+  if(homeLink) homeLink.classList.add('active')
+
 })
 
 
@@ -46,7 +53,7 @@ bar.style.width = bar.dataset.width
 let sections=document.querySelectorAll('section')
 let navLinks=document.querySelectorAll('.nav-link')
 
-/*
+
 sections.forEach(sec=>{
 let offset=sec.offsetTop-150
 let height=sec.offsetHeight
@@ -70,7 +77,7 @@ clearTimeout(window.scrollTimer)
 window.scrollTimer = setTimeout(()=>{
 document.body.classList.remove('scrolling')
 },200)
-*/
+
 const nav = document.querySelector('.navbar')
 if(scrollY > 50){
 nav.classList.add('scrolled')
@@ -101,22 +108,23 @@ project.classList.add('hide')
 })
 })
 
-document.querySelector("form").addEventListener("submit", async function(e){
-  e.preventDefault()
+/*scroll top*/
+// Scroll-to-top button
+const scrollTopBtn = document.getElementById("scrollTopBtn");
 
-  const form = e.target
-  const data = new FormData(form)
-
-  const response = await fetch(form.action, {
-    method: form.method,
-    body: data,
-    headers: { 'Accept': 'application/json' }
-  })
-
-  if(response.ok){
-    alert("Message sent successfully!")
-    form.reset()
+// Show/hide button
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollTopBtn.classList.add("show");
   } else {
-    alert("Something went wrong.")
+    scrollTopBtn.classList.remove("show");
   }
-})
+});
+
+// Smooth scroll to top
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
